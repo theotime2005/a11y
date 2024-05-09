@@ -1,0 +1,11 @@
+### Status
+https://www.bmvr.marseille.fr/in/rest/public/status
+
+### Search
+POST https://www.bmvr.marseille.fr/in/rest/api/search
+Content-Type: application/json
+
+
+{
+  "query": "Harry Potter"
+}
