@@ -11,8 +11,8 @@ export default function Result() {
     const location = useLocation();
     const query = useQuery();
     useEffect(() => {
-        if (useQuery().get('search')) {
-            setTitle(useQuery().get('search'));
+        if (query().get('search')) {
+            setTitle(query().get('search'));
         }
         document.title=`Résultat de recherche pour ${title}`;
     }, [location]);
