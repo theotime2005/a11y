@@ -1,0 +1,221 @@
+.SearchBarForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.book-main-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.book-section-1{
+    display: flex;
+    width: 1400px;
+    max-width: 80%;
+    height: fit-content;
+    max-height: 600px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.book-image-block{
+    display: flex;
+    width: 378px;
+    height: 510px;
+}
+
+.book-description-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.book-description-block-top{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 80%;
+    height: 100%;
+}
+
+.book-description-block-bottom{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    border-top: solid #1A489C 1px ;
+
+}
+.book-description-block-top-right{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+}
+.book-description-block-top-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 10%;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.book-description-block-top-right-characteristics-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 35px;
+    margin-bottom: 37px;
+}
+.book-description-block-top-right-characteristics-list-column{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.book-action-block{
+    display: flex;
+    width: 10%;
+    height: available;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-description-block-top-right-h3{
+    color: #FBA61C;
+    font-size: 18px;
+}
+
+.book-description-block-top-right-title{
+    color: #1A489C;
+    font-size: 30px;
+}
+.book-description-block-top-right-text{
+    color: #1A489C;
+    font-size: 14px;
+    margin-top: 36px;
+
+}
+
+.book-description-block-top-right-characteristics-list-column-title{
+    color: #1A489C;
+    font-size: 16px;
+    margin-top: 22px;
+}
+
+.book-description-block-top-right-characteristics-list-column-text{
+    color: #1A489C;
+    font-size: 18px;
+}
+
+.book-description-block-top-right-characteristics-list-column-button{
+    background-color: #1A489C;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 138px;
+    height: 34px;
+    border-radius: 50px;
+}
+
+.book-description-block-bottom-button{
+    background-color: #FBA61C;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 218px;
+    height: 52px;
+    border-radius: 50px;
+    margin-top: 32px;
+}
+.book-description-block-top-left-button{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    /*border: 1px solid;*/
+    box-shadow: 1px 2px  #1A489C;
+    border-radius: 50%;
+    background-color: #F8F8F8;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-section-2{
+    display: flex;
+    width: 1400px;
+    max-width: 80%;
+    height: 600px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #F8F8F8;
+    border-radius: 50px;
+}
+.book-section-2-box-top{
+    display: flex;
+    width: 100%;
+    height: 30%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 300px;
+    color: #1A489C;
+    font-size: 25px;
+}
+.book-section-2-box-bottom{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 200px;
+
+    /*
+    border-top: 1px solid #1A489C;
+    */
+}
+.book-section-2-box-bottom-line{
+    display: flex;
+    width: 1000px;
+    margin-top: 25px;
+}
+
+.book-section-2-box-bottom-line-title{
+    display: flex;
+    width: 250px;
+    color: #1A489C;
+    font-size: 16px;
+}
+.book-section-2-box-bottom-line-text{
+    display: flex;
+    width: 350px;
+    color: #1A489C;
+    font-size: 16px;
+}
+.book-section-2-box-bottom-line-image{
+    display: flex;
+    width: 270px;
+    height: 270px;
+}
+.img-dim{
+    height: 270px;
+}

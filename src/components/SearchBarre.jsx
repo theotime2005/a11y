@@ -24,7 +24,7 @@ export default function SearchBarre({searchParam}) {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className='SearchBarForm'>
             <label htmlFor="search">Rechercher dans la bibliothèque</label>
             <input
                 type="search"
