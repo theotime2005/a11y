@@ -6,8 +6,8 @@ export default function Home() {
         document.title="Accueil | Bibliothèque de Marseille";
     }, []);
     return (
-        <div>
-            <h1>Page d'accueil</h1>
+        <div className="text-center">
+            <h1 className="text-2xl font-bold">Page d'accueil</h1>
             <p>C'est la page d'accueil</p>
         </div>
     );
