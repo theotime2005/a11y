@@ -5,7 +5,7 @@ export default function Footer() {
         <footer className="bg-blue-500">
             <div className="flex items-center justify-center">
                 <div>
-                    <img alt="Ville de Marseille" src="Illustration%20Woman%201.png" className="w-24 h-auto"/>
+                    <img alt="Ville de Marseille" src="/images/8cbc787f-99ed-47f2-bb6f-6e03901b0c53.png.png" className="w-24 h-auto"/>
                 </div>
                 <div className="text-white ml-4">
                     <div className="mt-4">
