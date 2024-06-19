@@ -3,25 +3,29 @@ import {Link} from "react-router-dom";
 
 export default function NaveBarre() {
     return (
-        <header className="navbar">
+        <header className="navbar flex flex-col items-center justify-center py-4 bg-white">
             <img
                 alt="Logo du site"
-                src="attach_cmsUpload_2d5bb7c3-cd5d-40a5-a3a4-36a9f1dea02f%201.png"
+                src="/images/1ef7e687-9b9d-4647-aaaa-ccab619a0b73.png"
+                className="h-16 w-auto"
             />
-            <nav aria-label="Menu principal" className="div-2">
-                <Link to="/">Accueil</Link>
-                <Link to="/out">EN LIGNE</Link>
-                <Link to="/out">PRÊT NUMÉRIQUE</Link>
-                <Link to="/out">AGENDA</Link>
+            <nav aria-label="Menu principal" className="div-2 flex items-center space-x-4">
+                <Link to="/" className="text-blue-600">Accueil</Link>
+                <Link to="/out" className="text-blue-600">EN LIGNE</Link>
+                <Link to="/out" className="text-blue-600">PRÊT NUMÉRIQUE</Link>
+                <Link to="/out" className="text-blue-600">AGENDA</Link>
             </nav>
-            <div>
+            <div className="flex flex-col items-center mt-4">
                 <img
                     alt="Description de l'image"
                     className="img-2"
                     loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/9a50a6a83be9fd4af6113efdde28be0d74ef5eb66596adcffbe34f2312fcc1be?"
+                    src="/images/0205c7a4-7ff1-4bda-bee2-1d84c059fa93.png"
                 />
-                <img alt="Description de l'image" src="Component%201.png"/>
+                <img alt="Description de l'image" 
+                src="Component%201.png"
+                style={{ marginLeft: "auto" }}/>
+                
             </div>
         </header>
     );

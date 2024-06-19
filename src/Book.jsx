@@ -37,7 +37,7 @@ export default function Book() {
     }
 
     return (
-        <main className='book-main-box'>
+        <div className='book-main-box'>
             <section className='book-section-1'>
                 <div className='book-image-block'>
                     <img src={Portrait} alt='Portrait de Maria Strovensky' className='img-dim'/>
@@ -45,12 +45,12 @@ export default function Book() {
                 <div className='book-description-block'>
                     <div className='book-description-block-top'>
                         <div className='book-description-block-top-right'>
-                            <h3 className='book-description-block-top-right-h3'>
+                            <h1 className='book-description-block-top-right-h3'>
                                 Éducation, Histoire
-                            </h3>
-                            <div className='book-description-block-top-right-title'>
+                            </h1>
+                            <h2 className='book-description-block-top-right-title'>
                                 Biographie de Maria Strovensky
-                            </div>
+                            </h2>
                             <div className='book-description-block-top-right-text'>
                                 L'histoire de la vie de Maria Strovensky, une personne remarquable dont l'impact sur la société et le monde n'est pas largement connu, et la découverte du parcours de Maria, depuis ses débuts modestes jusqu'à la réussite de sa carrière et de sa vie personnelle. Le livre explore les réalisations, les luttes et les triomphes de Maria, offrant un aperçu de son caractère, de ses valeurs et de son héritage.
                             </div>
@@ -87,11 +87,12 @@ export default function Book() {
                             </div>
                         </div>
                         <div className='book-description-block-top-left'>
+                            <button className='book-description-block-top-left-button' onClick={() => togleBook()}>{!isAdd ? 'Ajouter au' : 'Retirer du'} panier</button>
                             <button className='book-description-block-top-left-button'>
-                                <img src={like} alt='like'/>
+                                <img src={like} alt='J'aime/>
                             </button>
                             <button className='book-description-block-top-left-button'>
-                                <img src={share} alt='share'/>
+                                <img src={share} alt='Partager'/>
                             </button>
                         </div>
                     </div>
@@ -161,6 +162,6 @@ export default function Book() {
             <section>
 
             </section>
-        </main>
+        </div>
     );
 };
