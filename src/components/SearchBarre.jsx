@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
-
+import './SearchBarre.css'
 
 export default function SearchBarre({searchParam}) {
     const navigate = useNavigate();

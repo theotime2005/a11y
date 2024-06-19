@@ -1,118 +1,123 @@
-import * as React from 'react';
-import {useEffect} from "react";
+import React, { useEffect } from 'react';
+import './home.css';
 
 export default function Home() {
     useEffect(() => {
-        document.title="Accueil | Bibliothèque de Marseille";
+        document.title = "Accueil | Bibliothèque de Marseille";
     }, []);
+
+    const newsImages = [
+        { src: "image1.jpg", alt: "Description de l'image 1" },
+        { src: "image2.jpg", alt: "Description de l'image 2" },
+        { src: "image3.jpg", alt: "Description de l'image 3" }
+    ];
+
+    const navCards = [
+        { title: "Nos Services", imgSrc: "Polygon%202.png" },
+        { title: "FAQ", imgSrc: "Polygon%202.png" },
+        { title: "Notre Réseau", imgSrc: "Polygon%202.png" },
+        { title: "Audio Livres", imgSrc: "Polygon%202.png" },
+        { title: "La Presse", imgSrc: "Polygon%202.png" },
+        { title: "Expo", imgSrc: "Polygon%202.png" }
+    ];
+
+    const topEvents = [
+        {
+            title: "RENCONTRE AVEC JEAN-PAUL DELFINO",
+            imgSrc: "Photo%20Here.png",
+            location: "Bibliothèque des Cinq Avenues",
+            date: "Jeudi 23 mai",
+            description: "Venez rencontrer l’auteur Jean Paul Delfino, lauréat des Prix Amerigo Vespucci et Antoine de Saint-Exupéry ..",
+            readMore: "Lire Plus"
+        },
+        // Ajoutez d'autres événements ici
+    ];
+
+    const newAchievements = [
+        {
+            title: "Langage ment",
+            imgSrc: "marissa-rodriguez-2mKYEVGA4jE-unsplash%201.png",
+            publisher: "Le Collège de France",
+            year: 2023,
+            type: "Music CD",
+            more: "Plus"
+        },
+        // Ajoutez d'autres nouveautés ici
+    ];
+
+    const stats = [
+        { imgSrc: "TITLES%201.png", count: "6,592", label: "Titre" },
+        { imgSrc: "Sold%201.png", count: "345,768", label: "Revues" },
+        { imgSrc: "Cust%201.png", count: "101,357", label: "Lecteur" },
+        { imgSrc: "Revenue%201.png", count: "3.5B", label: "Pages" },
+        { imgSrc: "Authors%201.png", count: "235", label: "Auteur" }
+    ];
+
+    const faqQuestions = [
+        {
+            question: "Comment accéder à son dossier d'abonné ?",
+            answer: "Connectez-vous à votre dossier en haut à droite : rentrez votre numéro de carte et votre mot de passe. Cliquez sur votre nom ou sur 'Mon compte' pour entrer dans votre dossier.",
+            imgSrc: "Button.png"
+        },
+        // Ajoutez d'autres questions ici
+    ];
+
     return (
         <div>
             <div className="news">
                 <h2>NEWS</h2>
                 <div className="slider">
-                    <img alt="Description de l'image 1" src="image1.jpg"/>
-                    <img alt="Description de l'image 2" src="image2.jpg"/>
-                    <img alt="Description de l'image 3" src="image3.jpg"/>
+                    {newsImages.map((image, index) => (
+                        <img key={index} alt={image.alt} src={image.src} />
+                    ))}
                 </div>
             </div>
             <div className="navigation">
                 <h2>NAVIGATION</h2>
-                <div className="navcard">
-                    <div>
-                        <h3>Nos Services</h3>
+                {navCards.map((card, index) => (
+                    <div className="navcard" key={index}>
+                        <div>
+                            <h3>{card.title}</h3>
+                        </div>
+                        <div>
+                            Plus
+                            <img alt="Plus" src={card.imgSrc} />
+                        </div>
                     </div>
-                    <div>
-                        Plus
-                        <img alt="Plus" src="Polygon%202.png"/>
-                    </div>
-                </div>
-                <div className="navcard">
-                    <div>
-                        <h3>FAQ</h3>
-                    </div>
-                    <div>
-                        Plus
-                        <img alt="Plus" src="Polygon%202.png"/>
-                    </div>
-                </div>
-                <div className="navcard">
-                    <div>
-                        <h3>Notre Réseau</h3>
-                    </div>
-                    <div>
-                        Plus
-                        <img alt="Plus" src="Polygon%202.png"/>
-                    </div>
-                </div>
-                <div className="navcard">
-                    <div>
-                        <h3>Audio Livres</h3>
-                    </div>
-                    <div>
-                        Plus
-                        <img alt="Plus" src="Polygon%202.png"/>
-                    </div>
-                </div>
-                <div className="navcard">
-                    <div>
-                        <h3>La Presse</h3>
-                    </div>
-                    <div>
-                        Plus
-                        <img alt="Plus" src="Polygon%202.png"/>
-                    </div>
-                </div>
-                <div className="navcard">
-                    <div>
-                        <h3>Expo</h3>
-                    </div>
-                    <div>
-                        Plus
-                        <img alt="Plus" src="Polygon%202.png"/>
-                    </div>
-                </div>
+                ))}
             </div>
             <div className="tops">
                 <h2>A LA UNE</h2>
-                <div>
-                    <div>
-                        <img alt="Description de l'image" src="Photo%20Here.png"/>
+                {topEvents.map((event, index) => (
+                    <div key={index}>
+                        <img alt="Description de l'image" src={event.imgSrc} />
                         <div>
-                            <div>
-                                Bibliothèque des Cinq Avenues
-                            </div>
-                            <div>
-                                Jeudi 23 mai
-                            </div>
+                            <div>{event.location}</div>
+                            <div>{event.date}</div>
                         </div>
-                        <h3>RENCONTRE AVEC JEAN-PAUL DELFINO</h3>
+                        <h3>{event.title}</h3>
+                        <div>{event.description}</div>
                         <div>
-                            Venez rencontrer l’auteur Jean Paul Delfino, lauréat des Prix Amerigo Vespucci et Antoine de
-                            Saint-Exupéry ..
-                        </div>
-                        <div>
-                            <div>Lire Plus</div>
-                            <img alt="Lire Plus" src="Polygon%202.png"/>
+                            <div>{event.readMore}</div>
+                            <img alt="Lire Plus" src="Polygon%202.png" />
                         </div>
                     </div>
-                    <!-- Répétez le bloc ci-dessus pour chaque élément -->
-                </div>
+                ))}
             </div>
             <div className="new_achievement">
                 <h2>LES NOUVEAUTÉS</h2>
-                <div>
-                    <div>
-                        <img alt="Description de l'image" src="marissa-rodriguez-2mKYEVGA4jE-unsplash%201.png"/>
-                        <h3>Langage ment</h3>
-                        <div>Le Collège de France</div>
-                        <div>2023 | Music CD</div>
+                {newAchievements.map((achievement, index) => (
+                    <div key={index}>
+                        <img alt="Description de l'image" src={achievement.imgSrc} />
+                        <h3>{achievement.title}</h3>
+                        <div>{achievement.publisher}</div>
+                        <div>{achievement.year} | {achievement.type}</div>
                         <div>
-                            <div>Plus</div>
-                            <img alt="Plus" src="Polygon%202.png"/>
+                            <div>{achievement.more}</div>
+                            <img alt="Plus" src="Polygon%202.png" />
                         </div>
                     </div>
-                    <!-- Répétez le bloc ci-dessus pour chaque élément -->
-                </div>
+                ))}
             </div>
             <div className="howitworks">
                 <h2>COMMENT ÇA MARCHE</h2>
@@ -122,73 +127,27 @@ export default function Home() {
                     <button>Choisir le livre</button>
                 </div>
                 <div>
-                    <div>
-                        <img alt="Titres" src="TITLES%201.png"/>
-                        <div>
-                            6,592
+                    {stats.map((stat, index) => (
+                        <div key={index}>
+                            <img alt={stat.label} src={stat.imgSrc} />
+                            <div>{stat.count}</div>
+                            <div>{stat.label}</div>
                         </div>
-                        <div>
-                            Titre
-                        </div>
-                    </div>
-                    <div>
-                        <img alt="Revues" src="Sold%201.png"/>
-                        <div>
-                            345,768
-                        </div>
-                        <div>
-                            Revues
-                        </div>
-                    </div>
-                    <div>
-                        <img alt="Lecteur" src="Cust%201.png"/>
-                        <div>
-                            101,357
-                        </div>
-                        <div>
-                            Lecteur
-                        </div>
-                    </div>
-                    <div>
-                        <img alt="Pages" src="Revenue%201.png"/>
-                        <div>
-                            3.5B
-                        </div>
-                        <div>
-                            Pages
-                        </div>
-                    </div>
-                    <div>
-                        <img alt="Auteur" src="Authors%201.png"/>
-                        <div>
-                            235
-                        </div>
-                        <div>
-                            Auteur
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
             <div className="faq">
                 <h2>Questions Générales</h2>
                 <div>
-                    <div>
-                        <div>
+                    {faqQuestions.map((faq, index) => (
+                        <div key={index}>
                             <div>
-                                <div>
-                                    Comment accéder à son dossier d'abonné ?
-                                </div>
-                                <img alt="Accès au dossier" src="Button.png"/>
+                                <div>{faq.question}</div>
+                                <img alt="Accès au dossier" src={faq.imgSrc} />
                             </div>
-                            <div>
-                                Connectez-vous à votre dossier en haut à droite : rentrez votre numéro de carte et votre
-                                mot de
-                                passe.
-                                Cliquez sur votre nom ou sur "Mon compte" pour entrer dans votre dossier.
-                            </div>
+                            <div>{faq.answer}</div>
                         </div>
-                        <!-- Répétez le bloc ci-dessus pour chaque question -->
-                    </div>
+                    ))}
                     <button>Plus de FAQ</button>
                 </div>
             </div>
