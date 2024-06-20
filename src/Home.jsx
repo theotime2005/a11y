@@ -8,23 +8,23 @@ export default function Home() {
 
     const newsImages = [
         { src: "image1.jpg", alt: "Description de l'image 1" },
-        { src: "image2.jpg", alt: "Description de l'image 2" },
-        { src: "image3.jpg", alt: "Description de l'image 3" }
+        { src: "assets/image2.jpg", alt: "Description de l'image 2" },
+        { src: "assets/image3.jpg", alt: "Description de l'image 3" }
     ];
 
     const navCards = [
-        { title: "Nos Services", imgSrc: "Polygon%202.png" },
-        { title: "FAQ", imgSrc: "Polygon%202.png" },
-        { title: "Notre Réseau", imgSrc: "Polygon%202.png" },
-        { title: "Audio Livres", imgSrc: "Polygon%202.png" },
-        { title: "La Presse", imgSrc: "Polygon%202.png" },
-        { title: "Expo", imgSrc: "Polygon%202.png" }
+        { title: "Nos Services", imgSrc: "assets/Polygon%202.png" },
+        { title: "FAQ", imgSrc: "assets/Polygon%202.png" },
+        { title: "Notre Réseau", imgSrc: "assets/Polygon%202.png" },
+        { title: "Audio Livres", imgSrc: "assets/Polygon%202.png" },
+        { title: "La Presse", imgSrc: "assets/Polygon%202.png" },
+        { title: "Expo", imgSrc: "assets/Polygon%202.png" }
     ];
 
     const topEvents = [
         {
             title: "RENCONTRE AVEC JEAN-PAUL DELFINO",
-            imgSrc: "Photo%20Here.png",
+            imgSrc: "assets/Photo%20Here.png",
             location: "Bibliothèque des Cinq Avenues",
             date: "Jeudi 23 mai",
             description: "Venez rencontrer l’auteur Jean Paul Delfino, lauréat des Prix Amerigo Vespucci et Antoine de Saint-Exupéry ..",
@@ -36,7 +36,7 @@ export default function Home() {
     const newAchievements = [
         {
             title: "Langage ment",
-            imgSrc: "marissa-rodriguez-2mKYEVGA4jE-unsplash%201.png",
+            imgSrc: "assets/marissa-rodriguez-2mKYEVGA4jE-unsplash%201.png",
             publisher: "Le Collège de France",
             year: 2023,
             type: "Music CD",
@@ -46,18 +46,18 @@ export default function Home() {
     ];
 
     const stats = [
-        { imgSrc: "TITLES%201.png", count: "6,592", label: "Titre" },
-        { imgSrc: "Sold%201.png", count: "345,768", label: "Revues" },
-        { imgSrc: "Cust%201.png", count: "101,357", label: "Lecteur" },
-        { imgSrc: "Revenue%201.png", count: "3.5B", label: "Pages" },
-        { imgSrc: "Authors%201.png", count: "235", label: "Auteur" }
+        { imgSrc: "assets/TITLES%201.png", count: "6,592", label: "Titre" },
+        { imgSrc: "assets/Sold%201.png", count: "345,768", label: "Revues" },
+        { imgSrc: "assets/Cust%201.png", count: "101,357", label: "Lecteur" },
+        { imgSrc: "assetsRevenue%201.png", count: "3.5B", label: "Pages" },
+        { imgSrc: "assets/Authors%201.png", count: "235", label: "Auteur" }
     ];
 
     const faqQuestions = [
         {
             question: "Comment accéder à son dossier d'abonné ?",
             answer: "Connectez-vous à votre dossier en haut à droite : rentrez votre numéro de carte et votre mot de passe. Cliquez sur votre nom ou sur 'Mon compte' pour entrer dans votre dossier.",
-            imgSrc: "Button.png"
+            imgSrc: "assets/Button.png"
         },
         // Ajoutez d'autres questions ici
     ];
@@ -99,7 +99,7 @@ export default function Home() {
                         <div>{event.description}</div>
                         <div>
                             <div>{event.readMore}</div>
-                            <img alt="Lire Plus" src="Polygon%202.png" />
+                            <img alt="Lire Plus" src="assets/Polygon%202.png" />
                         </div>
                     </div>
                 ))}
@@ -114,7 +114,7 @@ export default function Home() {
                         <div>{achievement.year} | {achievement.type}</div>
                         <div>
                             <div>{achievement.more}</div>
-                            <img alt="Plus" src="Polygon%202.png" />
+                            <img alt="Plus" src="assets/Polygon%202.png" />
                         </div>
                     </div>
                 ))}
