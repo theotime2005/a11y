@@ -6,7 +6,7 @@ export default function NaveBarre() {
         <header className="navbar flex flex-col items-center justify-center py-4 bg-white">
             <img
                 alt="Logo du site"
-                src="/images/1ef7e687-9b9d-4647-aaaa-ccab619a0b73.png"
+                src="/images/siteLogo - Edited.png"
                 className="h-16 w-auto"
             />
             <nav aria-label="Menu principal" className="div-2 flex items-center space-x-4">
@@ -23,7 +23,7 @@ export default function NaveBarre() {
                     src="/images/0205c7a4-7ff1-4bda-bee2-1d84c059fa93.png"
                 />
                 <img alt="Description de l'image" 
-                src="Component%201.png"
+                src="/images/homeBackground - Edited.png"
                 style={{ marginLeft: "auto" }}/>
                 
             </div>
